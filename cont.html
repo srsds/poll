@@ -1,0 +1,81 @@
+ <!DOCTYPE html>
+<html lang="en-US" ng-app="mycontapp">
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="app.js"></script>
+<title>Angular js</title>
+</head>
+<body>
+
+<div ng-controller="languages">
+
+<h1>Your Favourite Choices using Angular JS</h1>
+<h1>Your_Sweet_Name : <input type="text" ng-model="name"><h1>
+
+<h2>1. Select your Favourite Language:
+<button ng-click="php()">PHP</button>
+<button ng-click="ruby()">ruby</button>
+<button ng-click="Cpls()">C+</button>
+<button ng-click="Js()">Js</button>
+</h2>
+<h2>
+2. Select the easiest Language:
+<button ng-click="php1()">PHP</button>
+<button ng-click="ruby1()">ruby</button>
+<button ng-click="Cpls1()">C+</button>
+<button ng-click="Js1()">Js</button>
+</h2>
+<h2>
+3. Select the Toughest Language:
+<button ng-click="php2()">PHP</button>
+<button ng-click="ruby2()">ruby</button>
+<button ng-click="Cpls2()">C+</button>
+<button ng-click="Js2()">Js</button>
+</h2>
+<h2>
+If I am your Trainer how could you pay for me: <input type="text" ng-model="fee" placeholder="In dollars">$
+</h2>
+</br>
+</br>
+<center>
+<h1>Poll Results Lively</h1>
+<h2>Welcome {{name|uppercase}}</h2>
+<p>1.Your Favourite is {{ favlanguage }}</p>
+<p>2.Youer Choice of Easy is {{easylanguage}}</p>
+<p>3.Toughest Language is {{tolanguage}}
+<p>Thank you for {{fee*60| currency:"Rs. ":0}} it worth taking
+</center>
+</div>
+<!-- <script>
+	var application= angular.module('mycontapp',[]);
+	application.controller('languages',function($scope){
+
+		$scope.favlanguage ='None';
+		$scope.easylanguage ='None';
+		$scope.tolang="None";
+
+		$scope.php=function()
+		{
+			$scope.favlanguage="PHP";
+		}
+
+$scope.ruby=function()
+		{
+			$scope.favlanguage="Ruby";
+		}
+
+		$scope.Cpls=function()
+		{
+			$scope.favlanguage="C+";
+		}
+
+		$scope.Js=function()
+		{
+			$scope.favlanguage="Js";
+		}
+
+	});
+</script>
+ --></body>
+</html> 

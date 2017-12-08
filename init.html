@@ -1,0 +1,16 @@
+ <!DOCTYPE html>
+<html lang="en-US" ng-app="">
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<title>Angular js</title>
+</head>
+<body>
+<div ng-init ="Language=[{name:'ruby',exten:'rb'},{name:'java',exten:'.java'}]">
+<p ng-repeat="lang in Language">
+Name:{{ lang.name }}</br>
+Extension:{{ lang.exten }}
+</p>
+</div>
+</body>
+</html> 
